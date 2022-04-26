@@ -4,6 +4,7 @@ import './Service.css'
 
 const Service = ({ service }) => {
     const { _id, name, img, description, price } = service;
+    console.log(_id);
     const navigate = useNavigate('')
     const navigateToServiceDetail = id => {
         navigate(`/service/${id}`)
